@@ -29,7 +29,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="pt-24 py-16 scroll-mt-24" // Proper offset for fixed navbar
+      className="pt-24 min-h-screen py-16 scroll-mt-24" // Proper offset for fixed navbar
     >
       <div className="m-6 p-4 flex flex-row justify-center items-center text-center">
         <h1 className="text-2xl font-bold text-black flex items-center justify-center gap-2">

@@ -73,7 +73,7 @@ const skills = [
 
 function Skills() {
   return (
-    <div id="skills" className="skills-container">
+    <div id="skills" className="skills-container min-h-screen">
       <div className="m-1 p-0 flex pagename-div flex-row justify-center items-center text-center">
         <span className="font-bold  w-fit text-black p-2 px-5 text-2xl rounded-3xl">
           SKILLS

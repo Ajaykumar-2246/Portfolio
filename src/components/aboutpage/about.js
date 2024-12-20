@@ -9,7 +9,7 @@ function About() {
     <>
       <div
         id="about"
-        className="flex p-2 main-box  flex-col  aboutpage h-screen"
+        className="flex p-2 main-box  flex-col  aboutpage min-h-screen"
       >
         <div className="m-6 p-0 flex justify-center items-center text-center pagename-div">
           <h1 className="font-bold text-2xl  w-fit text-black p-2 px-5 rounded-3xl flex items-center">

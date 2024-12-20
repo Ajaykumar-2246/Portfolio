@@ -22,7 +22,7 @@ function Education() {
     <div id="education" className="p-8 education-container min-h-screen flex flex-col items-center">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-black flex items-center justify-center gap-2">
+        <h1 className="text-2xl mt-8 font-bold text-black flex items-center justify-center gap-2">
           <span>🎓</span> My Education
         </h1>
         <p className="text-gray-600">
