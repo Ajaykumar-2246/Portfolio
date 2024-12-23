@@ -16,6 +16,10 @@
   text-align: center;
   margin: 1rem;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .skill-item:hover {

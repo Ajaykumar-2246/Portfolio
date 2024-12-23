@@ -1,10 +1,18 @@
 import React from "react";
 import "./skills.css";
-import tailwind from './tailwind.png';
-import ML from './ml.png';
+import tailwind from "./tailwind.png";
+import ML from "./ml.png";
 
 const skills = [
   // Frontend Skills
+  {
+    name: "HTML",
+    logo: "https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png",
+  },
+  {
+    name: "CSS",
+    logo: "https://www.mvps.net/docs/wp-content/uploads/2019/10/css.png",
+  },
   {
     name: "ReactJS",
     logo: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
@@ -15,7 +23,7 @@ const skills = [
   },
   {
     name: "TailwindCSS",
-    logo: tailwind ,
+    logo: tailwind,
   },
   {
     name: "Bootstrap",
