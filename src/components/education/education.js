@@ -7,14 +7,14 @@ function Education() {
       institution: "Anurag University",
       duration: "2021-2025",
       status: "Pursuing",
-      image: "https://content3.jdmagicbox.com/v2/comp/rangareddy/e8/040pxx40.xx40.220610165642.x9e8/catalogue/anurag-university-venkatapur-rangareddy-universities-dbv8bignla.jpg", // Replace with actual image URL
+      image: "https://www.excelbee.com/images/university/anurag-university-logo.png", // Replace with actual image URL
     },
     {
       title: "Intermediate",
       institution: "Narayana Jr. College",
       duration: "2019-2021",
       status: "Completed",
-      image: "https://content.jdmagicbox.com/v2/comp/hyderabad/h1/040pxx40.xx40.221020204507.i8h1/catalogue/narayana-iit-academy-hyd-tcs-adibatla-rangareddy-4y6eyk3ayl.jpg", // Replace with actual image URL
+      image: "https://tse2.mm.bing.net/th?id=OIP.5d9NXL1WbGlLQNzxmjTz5wHaHa&pid=Api&P=0&h=180", // Replace with actual image URL
     },
   ];
 
