@@ -77,6 +77,10 @@ const skills = [
     name: "Java",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
   },
+  {
+    name:"socket.Io",
+    logo:"https://static-00.iconduck.com/assets.00/socket-io-icon-512x511-xjp7kzx6.png"
+  }
 ];
 
 function Skills() {
@@ -91,7 +95,7 @@ function Skills() {
         {skills.map((skill, index) => (
           <div className="skill-item  shadow-md" key={index}>
             <img src={skill.logo} alt={skill.name} />
-            <p>{skill.name}</p>
+            <p className="font-semibold">{skill.name}</p>
           </div>
         ))}
       </div>

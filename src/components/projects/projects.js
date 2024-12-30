@@ -3,24 +3,37 @@ import React from "react";
 function Projects() {
   const projects = [
     {
-      title: "Weather App",
-      content:
-        "Developed the React.js Weather App that makes requests to the OpenWeatherMap API and retrieves real-time weather data for cities. Implemented a responsive design using React hooks and managed state.",
-      tools: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "REST APIs" },
-      ],
-      url: "https://weather-app-9ysi.vercel.app/",
+        title: "Weather App",
+        content:
+            "Developed the React.js Weather App that makes requests to the OpenWeatherMap API and retrieves real-time weather data for cities. Implemented a responsive design using React hooks and managed state.",
+        tools: [
+            { name: "React" },
+            { name: "Tailwind CSS" },
+            { name: "REST APIs" },
+        ],
+        url: "https://weather-app-9ysi.vercel.app/",
     },
     {
-      title: "Movie Recommendation",
-      content:
-        "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
-      tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
-      url: "https://movierecommendation-6hjyaxfpmq2mpqzlrjr7za.streamlit.app/",
+        title: "Movie Recommendation",
+        content:
+            "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
+        tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
+        url: "https://movierecommendation-6hjyaxfpmq2mpqzlrjr7za.streamlit.app/",
     },
-  ];
+    {
+        title: "Chat App",
+        content:
+            "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
+        tools: [
+            { name: "React" },
+            { name: "Node.js" },
+            { name: "Socket.IO" },
+            { name: "MongoDB" },
+        ],
+        url: "https://fullstack-chat-app-me62.onrender.com/login", // Replace with the actual demo link
+    },
+];
+
 
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
