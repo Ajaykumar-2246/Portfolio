@@ -35,7 +35,7 @@ function Education() {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center md:flex-row w-full max-w-[600px]"
+            className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col items-center md:flex-row w-full max-w-[600px]"
           >
             <div className="w-full md:w-1/3 object-cover  h-52 md:h-auto">
               <img

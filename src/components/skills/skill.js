@@ -80,6 +80,10 @@ const skills = [
   {
     name:"socket.Io",
     logo:"https://static-00.iconduck.com/assets.00/socket-io-icon-512x511-xjp7kzx6.png"
+  },
+  {
+    name:"Streamlit",
+    logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDKmSgL7UJ6sstMUQTtjI2iDN7ClN2jRZ5Q&s"
   }
 ];
 
@@ -87,7 +91,7 @@ function Skills() {
   return (
     <div id="skills" className="skills-container min-h-screen">
       <div className="m-1 p-0 flex pagename-div flex-row justify-center items-center text-center">
-        <span className="font-bold  w-fit text-black p-2 px-5 text-2xl rounded-3xl">
+        <span className="font-bold mt-4 w-fit text-black p-2 px-5 text-2xl rounded-3xl">
           SKILLS
         </span>
       </div>

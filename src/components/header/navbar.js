@@ -10,7 +10,7 @@ function Navbar() {
           AJAY KUMAR
         </Link>
       </div>
-      <ul className='nav-menu flex gap-8 text-sm font-semibold'>
+      <ul className='nav-menu cursor-pointer flex gap-8 text-sm font-semibold'>
         <li>
           <Link to="about" smooth={true} duration={500} activeClass="active-link" spy={true}>
             ABOUT

@@ -57,12 +57,13 @@ function Home() {
               contact me
             </button>
           </Link>
-          <a href="https://drive.google.com/file/d/14Ve3JKPJOq3cgSEdwVwWyJRaPTdgrekS/view"
+          <a href="https://drive.google.com/file/d/11Tmk5cFpbei1B3G8JSEUxYP9cxRhKobp/view"
           target="_blank"
+          rel="noopener noreferrer"
           >
             <button
               type="button"
-              className="text-white   flex  bg-gradient-to-r  from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-3xl  px-5 py-2.5 text-center me-2 mb-2"
+              className="text-white   flex  bg-gradient-to-r  from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-3xl md:px-5 px-5 py-2.5 text-center me-2 mb-2"
             >
               Get Resume
             </button>

@@ -12,8 +12,8 @@ function About() {
         className="flex p-2 main-box  flex-col  aboutpage min-h-screen"
       >
         <div className="m-6 p-0 flex justify-center items-center text-center pagename-div">
-          <h1 className="font-bold text-2xl  w-fit text-black p-2 px-5 rounded-3xl flex items-center">
-            <FaUser className="mr-2 text-black" /> ABOUT ME
+          <h1 className="font-bold text-2xl mt-8 w-fit text-black p-2 px-5 rounded-3xl flex items-center">
+            <FaUser className="mr-2  text-black" /> ABOUT ME
           </h1>
         </div>
         <div className=" items-center about-page-content grid grid-cols-1 mt-6 lg:grid-cols-2 gap-8 lg:gap-16">

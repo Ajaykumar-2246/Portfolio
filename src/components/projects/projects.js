@@ -3,37 +3,43 @@ import React from "react";
 function Projects() {
   const projects = [
     {
-        title: "Weather App",
-        content:
-            "Developed the React.js Weather App that makes requests to the OpenWeatherMap API and retrieves real-time weather data for cities. Implemented a responsive design using React hooks and managed state.",
-        tools: [
-            { name: "React" },
-            { name: "Tailwind CSS" },
-            { name: "REST APIs" },
-        ],
-        url: "https://weather-app-9ysi.vercel.app/",
+      title: "Weather App",
+      content:
+        "Developed the React.js Weather App that makes requests to the OpenWeatherMap API and retrieves real-time weather data for cities. Implemented a responsive design using React hooks and managed state.",
+      tools: [
+        { name: "React" },
+        { name: "Tailwind CSS" },
+        { name: "REST APIs" },
+      ],
+      url: "https://weather-app-9ysi.vercel.app/",
     },
     {
-        title: "Movie Recommendation",
-        content:
-            "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
-        tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
-        url: "https://movierecommendation-6hjyaxfpmq2mpqzlrjr7za.streamlit.app/",
+      title: "Chat App",
+      content:
+        "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
+      tools: [
+        { name: "React" },
+        { name: "Node.js" },
+        { name: "Socket.IO" },
+        { name: "MongoDB" },
+      ],
+      url: "https://fullstack-chat-app-me62.onrender.com/login", // Replace with the actual demo link
     },
     {
-        title: "Chat App",
-        content:
-            "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
-        tools: [
-            { name: "React" },
-            { name: "Node.js" },
-            { name: "Socket.IO" },
-            { name: "MongoDB" },
-        ],
-        url: "https://fullstack-chat-app-me62.onrender.com/login", // Replace with the actual demo link
+      title: "Movie Recommendation",
+      content:
+        "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
+      tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
+      url: "https://movierecommendation-6hjyaxfpmq2mpqzlrjr7za.streamlit.app/",
     },
-];
-
+    {
+      title: "Customized Nutrition System",
+      content:
+        " Developed a machine learning model that provides users with a personalized diet plan for three meals: breakfast, lunch, and dinner.",
+      tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
+      url: "https://cnrs-hcmk6dmcduazsmqbdh7mpj.streamlit.app/",
+    },
+  ];
 
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
@@ -42,7 +48,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="pt-24 min-h-screen py-16 scroll-mt-24" // Proper offset for fixed navbar
+      className="pt-9 min-h-screen py-3 scroll-mt-24" // Proper offset for fixed navbar
     >
       <div className="m-6 p-4 flex flex-row justify-center items-center text-center">
         <h1 className="text-2xl font-bold text-black flex items-center justify-center gap-2">
@@ -54,18 +60,18 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white z-0 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white z-0 rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105"
             >
-              <div className="p-6">
+              <div className="p-4">
                 <a href={project.url} target="_blank" rel="noreferrer">
                   <h5 className="mb-2 text-2xl font-bold text-gray-900 hover:text-blue-600">
                     {project.title}
                   </h5>
                 </a>
-                <p className="text-gray-600 text-justify text-sm h-[135px] line-clamp-3">
+                <p className="text-gray-600 text-justify text-sm min-h-[125px] line-clamp-3">
                   {project.content}
                 </p>
-                <div className="mt-4">
+                <div className="mt-2">
                   <p className="flex flex-wrap gap-2">
                     {project.tools.map((item, index) => (
                       <span
@@ -77,7 +83,7 @@ function Projects() {
                     ))}
                   </p>
                 </div>
-                <div className="mt-6 text-center">
+                <div className="mt-5 text-center">
                   <button
                     type="button"
                     role="link"
