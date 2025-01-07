@@ -57,7 +57,7 @@ function Home() {
               contact me
             </button>
           </Link>
-          <a href="https://drive.google.com/file/d/1wB7kJ0O6FNN_0cdpBpjcI7BAsNkmJX-o/view"
+          <a href="https://drive.google.com/file/d/1aNgvzIbCobEj2apQVGdjYLFwA-liqJAM/view"
           target="_blank"
           rel="noopener noreferrer"
           >
