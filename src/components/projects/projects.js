@@ -14,16 +14,28 @@ function Projects() {
       url: "https://weather-app-9ysi.vercel.app/",
     },
     {
+      title: "Expense Tracker",
+      content: "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
+      tools: [
+        { name: "ReactJS" },
+        { name: "Zustand (state management)" },
+        { name: "NodeJs" },
+        { name: "MongoDB" },
+      ],
+      url: "https://spendly-qhpk.onrender.com",
+    },
+    {
       title: "Chat App",
       content:
         "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
       tools: [
         { name: "React" },
+        { name: "Zustand (state management)" },
         { name: "Node.js" },
         { name: "Socket.IO" },
         { name: "MongoDB" },
       ],
-      url: "https://fullstack-chat-app-me62.onrender.com/login", // Replace with the actual demo link
+      url: "https://chatease-15l6.onrender.com",
     },
     {
       title: "Movie Recommendation",
