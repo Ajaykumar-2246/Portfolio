@@ -42,7 +42,7 @@ function Projects() {
       content:
         "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
       tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
-      url: "https://movierecommendation-6hjyaxfpmq2mpqzlrjr7za.streamlit.app/",
+      url: "https://mr-6hjyaxfpmq2mpqzlrjr7.streamlit.app/",
     },
     {
       title: "Customized Nutrition System",
