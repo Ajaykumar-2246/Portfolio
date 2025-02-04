@@ -22,6 +22,10 @@ const skills = [
     logo: "https://cdn.worldvectorlogo.com/logos/redux.svg",
   },
   {
+    name: "Zustand",
+    logo: "https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560",
+  },
+  {
     name: "TailwindCSS",
     logo: tailwind,
   },
@@ -76,10 +80,6 @@ const skills = [
   {
     name: "Java",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-  },
-  {
-    name:"socket.Io",
-    logo:"https://static-00.iconduck.com/assets.00/socket-io-icon-512x511-xjp7kzx6.png"
   },
   {
     name:"Streamlit",
