@@ -7,26 +7,32 @@ function Education() {
       institution: "Anurag University",
       duration: "2021-2025",
       status: "Pursuing",
-      image: "https://www.excelbee.com/images/university/anurag-university-logo.png", // Replace with actual image URL
+      image:
+        "https://www.excelbee.com/images/university/anurag-university-logo.png", // Replace with actual image URL
     },
     {
       title: "Intermediate",
       institution: "Narayana Jr. College",
       duration: "2019-2021",
       status: "Completed",
-      image: "https://tse2.mm.bing.net/th?id=OIP.5d9NXL1WbGlLQNzxmjTz5wHaHa&pid=Api&P=0&h=180", // Replace with actual image URL
+      image:
+        "https://tse2.mm.bing.net/th?id=OIP.5d9NXL1WbGlLQNzxmjTz5wHaHa&pid=Api&P=0&h=180", // Replace with actual image URL
     },
   ];
 
   return (
-    <div id="education" className="p-8 education-container min-h-screen flex flex-col items-center">
+    <div
+      id="education"
+      className="p-8 education-container min-h-screen flex flex-col items-center"
+    >
       {/* Header Section */}
       <div className="text-center mb-8">
         <h1 className="text-2xl mt-8 font-bold text-black flex items-center justify-center gap-2">
           <span>🎓</span> My Education
         </h1>
         <p className="text-gray-600">
-          Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
+          Education Is Not The Learning Of Facts, But The Training Of The Mind
+          To Think.
         </p>
       </div>
 
@@ -35,7 +41,7 @@ function Education() {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col items-center md:flex-row w-full max-w-[600px]"
+            className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center md:flex-row w-full max-w-[600px]"
           >
             <div className="w-full md:w-1/3 object-cover  h-52 md:h-auto">
               <img
@@ -51,8 +57,8 @@ function Education() {
               <span
                 className={`mt-4 inline-block px-4 py-1 text-sm font-medium rounded-full ${
                   edu.status === "Pursuing"
-                    ? "bg-green-100 text-green-600"
-                    : "bg-blue-100 text-blue-600"
+                    ? "bg-blue-100 text-blue-600"
+                    : "bg-green-100 text-green-600"
                 }`}
               >
                 {edu.status}

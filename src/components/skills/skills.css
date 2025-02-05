@@ -10,8 +10,8 @@
 
 .skill-item {
   border-radius: 8px;
-  width: 133px;
-  height: 130px;
+  width: 130px;
+  height: 115px;
   padding:0.3rem;
   text-align: center;
   margin: 1rem;
@@ -27,15 +27,16 @@
 }
 
 .skill-item img {
-  width: 65px;
-  height: 65px;
+  width:55px;
+  height:55px;
   margin-bottom: 0.5rem;
 }
 
 .skill-item p {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+  display: flex;
 }
 
 /* Responsive design for grid */

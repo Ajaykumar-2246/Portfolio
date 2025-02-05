@@ -1,6 +1,5 @@
 import React from "react";
 import "./skills.css";
-import tailwind from "./tailwind.png";
 import ML from "./ml.png";
 
 const skills = [
@@ -12,6 +11,10 @@ const skills = [
   {
     name: "CSS",
     logo: "https://www.mvps.net/docs/wp-content/uploads/2019/10/css.png",
+  },
+  {
+    name: "JavaScript",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
     name: "ReactJS",
@@ -27,15 +30,11 @@ const skills = [
   },
   {
     name: "TailwindCSS",
-    logo: tailwind,
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
   },
   {
     name: "Bootstrap",
     logo: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-  },
-  {
-    name: "JavaScript",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
 
   // Backend Skills
@@ -47,6 +46,8 @@ const skills = [
     name: "ExpressJS",
     logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png",
   },
+
+  // Database
   {
     name: "MongoDB",
     logo: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
@@ -70,22 +71,24 @@ const skills = [
     logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   },
 
-  // Machine Learning
-  {
-    name: "Machine Learning",
-    logo: ML,
-  },
-
-  // Java
+  // Programming Languages
   {
     name: "Java",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
   },
   {
-    name:"Streamlit",
-    logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDKmSgL7UJ6sstMUQTtjI2iDN7ClN2jRZ5Q&s"
-  }
+    name: "Streamlit",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDKmSgL7UJ6sstMUQTtjI2iDN7ClN2jRZ5Q&s",
+  },
+
+  // Machine Learning
+  {
+    name: "Machine Learning",
+    logo: ML,
+  },
 ];
+
+
 
 function Skills() {
   return (
@@ -103,6 +106,7 @@ function Skills() {
           </div>
         ))}
       </div>
+      
     </div>
   );
 }

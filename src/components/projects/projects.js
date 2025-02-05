@@ -15,10 +15,11 @@ function Projects() {
     },
     {
       title: "Expense Tracker",
-      content: "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
+      content:
+        "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
       tools: [
         { name: "ReactJS" },
-        { name: "Zustand (state management)" },
+        { name: "Zustand" },
         { name: "NodeJs" },
         { name: "MongoDB" },
       ],
@@ -30,7 +31,7 @@ function Projects() {
         "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
       tools: [
         { name: "React" },
-        { name: "Zustand (state management)" },
+        { name: "Zustand " },
         { name: "Node.js" },
         { name: "Socket.IO" },
         { name: "MongoDB" },
@@ -72,7 +73,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white z-0 rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white z-0 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105"
             >
               <div className="p-4">
                 <a href={project.url} target="_blank" rel="noreferrer">
@@ -80,11 +81,11 @@ function Projects() {
                     {project.title}
                   </h5>
                 </a>
-                <p className="text-gray-600 text-justify text-sm min-h-[125px] line-clamp-3">
+                <p className="text-gray-600 text-justify text-sm min-h-[115px] line-clamp-3">
                   {project.content}
                 </p>
-                <div className="mt-2">
-                  <p className="flex flex-wrap gap-2">
+                <div className="mt-1">
+                  <p className="flex flex-wrap gap-1">
                     {project.tools.map((item, index) => (
                       <span
                         key={index}
@@ -95,7 +96,7 @@ function Projects() {
                     ))}
                   </p>
                 </div>
-                <div className="mt-5 text-center">
+                <div className="mt-4 flex justify-center items-end text-center">
                   <button
                     type="button"
                     role="link"
