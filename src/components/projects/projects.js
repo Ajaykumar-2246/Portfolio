@@ -63,7 +63,7 @@ function Projects() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">PROJECTS</h1>
+          <h1 className="text-2xl pt-6 font-bold text-gray-900">PROJECTS</h1>
           <p className="mt-2 text-lg text-gray-600">
             A collection of my recent projects
           </p>

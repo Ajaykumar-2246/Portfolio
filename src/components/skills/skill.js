@@ -91,8 +91,8 @@ function Skills() {
   return (
     <div id="skills" className="min-h-screen  py-12">
       {/* Heading Section */}
-      <div className="text-center mb-12 py-5">
-        <h1 className="inline-block text-2xl font-bold ">SKILLS</h1>
+      <div className="text-center mb-12">
+        <h1 className="inline-block pt-8  text-2xl font-bold ">SKILLS</h1>
       </div>
 
       {/* Skills Grid */}

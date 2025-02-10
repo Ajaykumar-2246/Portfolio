@@ -6,11 +6,11 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen py-4 p-8"
+      className="flex flex-col items-center justify-center min-h-screen  p-8"
     >
       {/* Heading Section */}
-      <div className="w-full pt-4 max-w-4xl text-center mb-12">
-        <h1 className="inline-flex py-5 items-center text-2xl font-bold ">
+      <div className="w-full pt-3 max-w-4xl text-center mb-8">
+        <h1 className="inline-flex pt-6 items-center text-2xl font-bold ">
           <FaUser className="mr-2 text-gray-700" />
           ABOUT ME
         </h1>
