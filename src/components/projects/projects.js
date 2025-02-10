@@ -18,10 +18,9 @@ function Projects() {
       content:
         "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
       tools: [
-        { name: "ReactJS" },
+        { name: "MERN Stack" },
         { name: "Zustand" },
-        { name: "NodeJs" },
-        { name: "MongoDB" },
+        
       ],
       url: "https://spendly-qhpk.onrender.com",
     },
@@ -30,11 +29,10 @@ function Projects() {
       content:
         "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
       tools: [
-        { name: "React" },
+        { name: "MERN Stack" },
         { name: "Zustand " },
-        { name: "Node.js" },
         { name: "Socket.IO" },
-        { name: "MongoDB" },
+        
       ],
       url: "https://chatease-15l6.onrender.com",
     },
@@ -61,47 +59,53 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="pt-9 min-h-screen py-3 scroll-mt-24" // Proper offset for fixed navbar
+      className="pt-14 min-h-screen py-10 scroll-mt-24 "
     >
-      <div className="m-6 p-4 flex flex-row justify-center items-center text-center">
-        <h1 className="text-2xl font-bold text-black flex items-center justify-center gap-2">
-          PROJECTS
-        </h1>
-      </div>
-      <div className="container -z-10 mx-auto px-4">
-        <div className="grid grid-cols-1 z-0 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-6">
+          <h1 className="text-2xl font-bold text-gray-900">PROJECTS</h1>
+          <p className="mt-2 text-lg text-gray-600">
+            A collection of my recent projects
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white z-0 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <div className="p-4">
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  <h5 className="mb-2 text-2xl font-bold text-gray-900 hover:text-blue-600">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block"
+                >
+                  <h5 className="mb-4 text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">
                     {project.title}
                   </h5>
                 </a>
                 <p className="text-gray-600 text-justify text-sm min-h-[115px] line-clamp-3">
                   {project.content}
                 </p>
-                <div className="mt-1">
-                  <p className="flex flex-wrap gap-1">
+                <div className="mt-3">
+                  <div className="flex flex-wrap gap-2">
                     {project.tools.map((item, index) => (
                       <span
                         key={index}
-                        className="bg-gray-200 text-gray-800 text-xs py-1 px-2 rounded-full"
+                        className="bg-gray-200 text-gray-800 text-xs py-1 px-3 rounded-full"
                       >
                         {item.name}
                       </span>
                     ))}
-                  </p>
+                  </div>
                 </div>
-                <div className="mt-4 flex justify-center items-end text-center">
+                <div className="mt-6 flex justify-center">
                   <button
                     type="button"
                     role="link"
                     onClick={() => openInNewTab(project.url)}
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-colors duration-300"
                   >
                     View Project
                   </button>

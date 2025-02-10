@@ -28,7 +28,7 @@ function Education() {
       {/* Header Section */}
       <div className="text-center mb-8">
         <h1 className="text-2xl mt-8 font-bold text-black flex items-center justify-center gap-2">
-          <span>🎓</span> My Education
+          <span className="text-2xl">🎓</span> My Education
         </h1>
         <p className="text-gray-600">
           Education Is Not The Learning Of Facts, But The Training Of The Mind

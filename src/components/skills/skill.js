@@ -1,5 +1,4 @@
 import React from "react";
-import "./skills.css";
 import ML from "./ml.png";
 
 const skills = [
@@ -88,25 +87,34 @@ const skills = [
   },
 ];
 
-
-
 function Skills() {
   return (
-    <div id="skills" className="skills-container min-h-screen">
-      <div className="m-1 p-0 flex pagename-div flex-row justify-center items-center text-center">
-        <span className="font-bold mt-4 w-fit text-black p-2 px-5 text-2xl rounded-3xl">
-          SKILLS
-        </span>
+    <div id="skills" className="min-h-screen  py-12">
+      {/* Heading Section */}
+      <div className="text-center mb-12 py-5">
+        <h1 className="inline-block text-2xl font-bold ">SKILLS</h1>
       </div>
-      <div className="skills-grid justify-center flex flex-wrap">
-        {skills.map((skill, index) => (
-          <div className="skill-item  shadow-md" key={index}>
-            <img src={skill.logo} alt={skill.name} />
-            <p className="font-semibold">{skill.name}</p>
-          </div>
-        ))}
+
+      {/* Skills Grid */}
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center p-2 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="w-12 h-12  object-contain mb-4"
+              />
+              <p className="text-sm  font-semibold text-gray-700 text-center">
+                {skill.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-      
     </div>
   );
 }
