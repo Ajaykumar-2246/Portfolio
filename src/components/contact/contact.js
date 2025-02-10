@@ -6,7 +6,7 @@ function Contact() {
       id="contact"
       className="py-12 flex min-h-screen justify-center items-center"
     >
-      <div className="p-6 mx-4 sm:mx-auto max-w-md w-full bg-white shadow-xl rounded-xl">
+      <div className="mt-4 p-6 mx-4 sm:mx-auto max-w-md w-full bg-white shadow-xl rounded-xl">
         <h1 className="text-3xl font-extrabold text-gray-800 text-center mb-6">
           Contact Us
         </h1>

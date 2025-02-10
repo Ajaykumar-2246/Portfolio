@@ -89,26 +89,27 @@ const skills = [
 
 function Skills() {
   return (
-    <div id="skills" className="min-h-screen  p-4">
+    <div id="skills" className="min-h-screen p-2">
       {/* Heading Section */}
-      <div className="text-center mb-12">
-        <h1 className="inline-block pt-11  text-2xl font-bold ">SKILLS</h1>
+      <div className="text-center mb-6 pt-20">
+        <h1 className="text-3xl font-bold text-gray-800">SKILLS</h1>
+        <p className="text-gray-600 mt-2">Technologies I work with</p>
       </div>
 
       {/* Skills Grid */}
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+      <div className="container mx-auto px-2">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-2 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="flex flex-col items-center p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <img
                 src={skill.logo}
                 alt={skill.name}
-                className="w-12 h-12  object-contain mb-4"
+                className="w-12 h-12 object-contain mb-3"
               />
-              <p className="text-sm  font-semibold text-gray-700 text-center">
+              <p className="text-sm font-semibold text-gray-700 text-center">
                 {skill.name}
               </p>
             </div>

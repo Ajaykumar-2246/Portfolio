@@ -23,17 +23,13 @@ function Education() {
   return (
     <div
       id="education"
-      className="p-4  min-h-screen flex flex-col items-center"
+      className="p-2  min-h-screen flex flex-col items-center"
     >
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-2xl mt-8 pt-6 font-bold text-black flex items-center justify-center gap-2">
+        <h1 className="text-2xl mt-8 pt-9 font-bold text-black flex items-center justify-center gap-2">
           <span className="text-2xl">🎓</span> My Education
         </h1>
-        <p className="text-gray-600">
-          Education Is Not The Learning Of Facts, But The Training Of The Mind
-          To Think.
-        </p>
       </div>
 
       {/* Education Cards */}
