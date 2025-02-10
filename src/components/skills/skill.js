@@ -89,7 +89,7 @@ const skills = [
 
 function Skills() {
   return (
-    <div id="skills" className="min-h-screen p-2">
+    <div id="skills" className="min-h-screen p-2 pb-0">
       {/* Heading Section */}
       <div className="text-center mb-6 pt-20">
         <h1 className="text-3xl font-bold text-gray-800">SKILLS</h1>
