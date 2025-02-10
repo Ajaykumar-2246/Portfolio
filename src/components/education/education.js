@@ -23,7 +23,7 @@ function Education() {
   return (
     <div
       id="education"
-      className="p-8 education-container min-h-screen flex flex-col items-center"
+      className="p-4  min-h-screen flex flex-col items-center"
     >
       {/* Header Section */}
       <div className="text-center mb-8">

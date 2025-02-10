@@ -59,7 +59,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="pt-14 min-h-screen py-10 scroll-mt-24 "
+      className="pt-12 min-h-screen scroll-mt-24 "
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
