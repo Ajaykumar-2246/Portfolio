@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <nav className="navbar w-full h-14 z-10 flex justify-between items-center px-4 sm:px-8 lg:px-16 shadow-md bg-white fixed top-0">
       {/* Logo or Name */}
-      <div className="text-2xl font-bold">
+      <div className="text-2xl cursor-pointer font-bold">
         <Link
           className="text-blue-500 hover:text-blue-700 transition-colors"
           to="home"
@@ -24,7 +24,7 @@ function Navbar() {
       </div>
 
       {/* Hamburger Menu for Mobile */}
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <button
           className="text-blue-500 focus:outline-none"
           onClick={toggleMenu}
@@ -63,7 +63,7 @@ function Navbar() {
             </svg>
           )}
         </button>
-      </div>
+      </div> */}
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 text-sm font-semibold">
@@ -130,7 +130,7 @@ function Navbar() {
       </ul>
 
       {/* Mobile Menu Dropdown */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="md:hidden absolute top-14 left-0 w-full bg-white shadow-md">
           <ul className="flex flex-col items-center py-4">
             <li className="py-2">
@@ -200,7 +200,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
     </nav>
   );
 }
