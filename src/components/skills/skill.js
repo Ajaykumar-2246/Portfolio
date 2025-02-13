@@ -102,7 +102,7 @@ function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="flex flex-col items-center p-2 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <img
                 src={skill.logo}

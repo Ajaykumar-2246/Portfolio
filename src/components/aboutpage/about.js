@@ -10,7 +10,7 @@ function About() {
     >
       {/* Heading Section */}
       <div className="w-full  max-w-4xl text-center mb-8">
-        <h1 className="inline-flex pt-2 items-center text-2xl font-bold ">
+        <h1 className="inline-flex justify-center  pt-2 items-center text-2xl font-bold ">
           <FaUser className="mr-2 text-gray-700" />
           ABOUT ME
         </h1>
