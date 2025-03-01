@@ -14,7 +14,7 @@ function Navbar() {
       {/* Logo or Name */}
       <div className="text-2xl cursor-pointer font-bold">
         <Link
-          className="text-blue-500 hover:text-blue-700 transition-colors"
+          className="text-blue-500 hover:text-blue-500 transition-colors"
           to="home"
           smooth={true}
           duration={500}

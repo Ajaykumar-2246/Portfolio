@@ -17,24 +17,29 @@ function Projects() {
       title: "Expense Tracker",
       content:
         "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
-      tools: [
-        { name: "MERN Stack" },
-        { name: "Zustand" },
-        
-      ],
+      tools: [{ name: "MERN Stack" }, { name: "Zustand" }],
       url: "https://spendly-qhpk.onrender.com",
     },
     {
       title: "Chat App",
       content:
-        "Developed a real-time messaging application with user authentication, private chats, and sharing images. Integrated WebSocket for instant message delivery and implemented a responsive design for both desktop and mobile users.",
+        "The  project  is  a  real-time  chat  application  with  user  authentication,  private  messaging,  and  a  dynamic  user interface for safe and effective communication. It was developed using the MERN stack and Socket.io.",
       tools: [
         { name: "MERN Stack" },
         { name: "Zustand " },
+        { name: "Tailwind CSS" },
         { name: "Socket.IO" },
-        
       ],
       url: "https://chatease-15l6.onrender.com",
+    },{
+      title: "Social Media App",
+      content:
+        "Developed  a  user-friendly  social  media  platform  where  users  can  create  accounts,  post  tweets,  and  interact  with others' content in real-time.",
+      tools: [{ name: "MERN Stack" },
+        { name: "Zustand " },
+        { name: "Tailwind CSS" },
+        { name: "Daisy UI" }],
+      url: "https://chirpnet.onrender.com",
     },
     {
       title: "Movie Recommendation",
@@ -57,10 +62,7 @@ function Projects() {
   };
 
   return (
-    <div
-      id="projects"
-      className="pt-12 min-h-screen scroll-mt-24 "
-    >
+    <div id="projects" className="pt-12 min-h-screen scroll-mt-24 ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <h1 className="text-2xl pt-6 font-bold text-gray-900">PROJECTS</h1>
