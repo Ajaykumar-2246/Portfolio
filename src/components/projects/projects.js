@@ -39,7 +39,7 @@ function Projects() {
         { name: "Zustand " },
         { name: "Tailwind CSS" },
         { name: "Daisy UI" }],
-      url: "https://chirpnet.onrender.com",
+      url: "https://linkup-zlqw.onrender.com",
     },
     {
       title: "Movie Recommendation",
