@@ -103,12 +103,13 @@ function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 aspect-square"
+              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              style={{ width: "100px", height: "100px" }} // Set fixed width and height
             >
               <img
                 src={skill.logo}
                 alt={skill.name}
-                className="w-12 h-12 object-contain mb-3"
+                className="w-12 h-12 object-contain mb-2"
               />
               <p className="text-sm font-semibold text-gray-700 text-center">
                 {skill.name}
