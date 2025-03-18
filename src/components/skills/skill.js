@@ -85,10 +85,7 @@ const skills = [
   },
 
   // Machine Learning
-  {
-    name: "Machine Learning (basic)",
-    logo: ML,
-  },
+  { name: "Machine Learning (basic)", logo: ML },
 ];
 
 function Skills() {
@@ -106,7 +103,7 @@ function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-2 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 aspect-square"
             >
               <img
                 src={skill.logo}
