@@ -99,12 +99,11 @@ function Skills() {
 
       {/* Skills Grid */}
       <div className="container mx-auto px-2">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-              style={{ width: "100px", height: "100px" }} // Set fixed width and height
+              className="flex flex-col items-center justify-center p-4 px-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <img
                 src={skill.logo}
