@@ -79,11 +79,7 @@ const skills = [
     name: "Java",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
   },
-  {
-    name: "Streamlit",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDKmSgL7UJ6sstMUQTtjI2iDN7ClN2jRZ5Q&s",
-  },
-
+  
   // Machine Learning
   { name: "Machine Learning (basic)", logo: ML },
 ];
@@ -103,7 +99,7 @@ function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4  bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <img
                 src={skill.logo}

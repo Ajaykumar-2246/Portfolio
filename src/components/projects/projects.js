@@ -3,17 +3,6 @@ import React from "react";
 function Projects() {
   const projects = [
     {
-      title: "Weather App",
-      content:
-        "Developed the React.js Weather App that makes requests to the OpenWeatherMap API and retrieves real-time weather data for cities. Implemented a responsive design using React hooks and managed state.",
-      tools: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "REST APIs" },
-      ],
-      url: "https://weather-app-9ysi.vercel.app/",
-    },
-    {
       title: "Expense Tracker",
       content:
         "It is a full-stack web application which helps users track their income and expenses efficiently. The project has been developed on the MERN Stack, and Zustand for state management. It has provided an easy-to-use and intuitive interface for daily transactions tracking.",
@@ -41,13 +30,7 @@ function Projects() {
         { name: "Daisy UI" }],
       url: "https://linkup-zlqw.onrender.com",
     },
-    {
-      title: "Movie Recommendation",
-      content:
-        "Built a content-based movie recommendation system using cosine similarity to suggest films based on tags, overviews, and other features of films the user has interacted with, providing personalized recommendations.",
-      tools: [{ name: "Machine learning" }, { name: "Streamlit" }],
-      url: "https://mr-6hjyaxfpmq2mpqzlrjr7.streamlit.app/",
-    },
+   
     {
       title: "Customized Nutrition System",
       content:
