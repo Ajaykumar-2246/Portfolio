@@ -19,22 +19,22 @@ function App() {
       <div className="pt-10">
         {" "}
         {/* Adjust this padding based on your navbar height */}
-        <section id="home" className="min-h-screen">
+        <section id="home" className="min-h-screen bg-white">
           <Home />
         </section>
-        <section id="about" className="min-h-screen py-15">
+        <section id="about" className="min-h-screen py-15 bg-white">
           <About />
         </section>
         <section id="skills" className="min-h-screen py-20 bg-white">
           <Skills />
         </section>
-        <section id="education" className="min-h-screen py-20">
+        <section id="education" className="min-h-screen py-20 bg-white">
           <Education />
         </section>
         <section id="projects" className="min-h-screen py-17 bg-white">
           <Projects />
         </section>
-        <section id="contact" className="min-h-screen py-17">
+        <section id="contact" className="min-h-screen py-17 bg-white">
           <Contact />
         </section>
       </div>
