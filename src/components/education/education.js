@@ -24,7 +24,7 @@ function Education() {
   return (
     <div
       id="education"
-      className="p-2 pb-0 min-h-screen flex flex-col items-center"
+      className="p-2 pb-0 min-h-screen flex flex-col items-center bg-white"
     >
       {/* Header Section */}
       <div className="text-center mb-12">
