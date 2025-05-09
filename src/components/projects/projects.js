@@ -25,6 +25,13 @@ function Projects() {
       url: "https://linkup-zlqw.onrender.com",
     },
     {
+      title: "E-commerce",
+      content:
+        "Developed a full-stack e-commerce platform supporting product listing, shopping cart, order placement, and Stripe-based payment integration. Ensured responsive and intuitive user experience using Zustand for state management and Tailwind CSS/DaisyUI for styling.",
+        tools: ["MERN Stack", "Zustand", "Tailwind CSS", "Daisy UI"],
+      url: "https://urbancharm.onrender.com",
+    },
+    {
       title: "Customized Nutrition System",
       content:
         "Machine learning model that provides personalized diet plans for three daily meals based on user preferences and requirements.",
