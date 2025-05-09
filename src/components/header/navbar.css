@@ -1,9 +1,0 @@
-* {
-  box-sizing: border-box;
-}
-
-
-.active-link {
-  color:rgb(88, 88, 251);
-  border-bottom: solid rgb(88, 88, 251);
-}

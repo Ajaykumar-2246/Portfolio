@@ -1,118 +1,132 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
-// Reusable SVG Icon Component
-const SocialIcon = ({ href, children, label }) => (
+// Reusable Icon Button Component
+const IconButton = ({ href, icon: Icon, label, className = "" }) => (
   <a
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="hover:scale-125 transition-transform duration-300"
+    className={`p-3 rounded-full bg-gray-50 hover:bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all ${className}`}
     aria-label={label}
   >
-    {children}
+    <Icon className="w-5 h-5" />
   </a>
 );
 
 const Home = () => {
   return (
-    <div className="flex gap-2 flex-col md:flex-row items-center justify-center min-h-screen py-10 px-3">
-      {/* Left Section */}
-      <div className="w-full md:w-3/5 order-2 md:order-1 flex flex-col justify-center space-y-8">
-        <div className="text-left">
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-            Hello, <br />
-            This is <span className="text-blue-500">AJAY KUMAR</span>, <br />
-            I'm a Professional{" "}
-            <span className="text-[#16f2b3]">Software Developer</span>.
-          </h1>
-        </div>
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-8 bg-white"
+    >
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+        {/* Left Section - Content */}
+        <div className="w-full md:w-1/2 space-y-8">
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+              Hello, I'm <span className="text-blue-600">Ajay Kumar</span>
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-gray-700 font-medium">
+              Professional{" "}
+              <span className="text-teal-600">Software Developer</span>
+            </h2>
+            <p className="text-gray-600 max-w-lg">
+              Passionate about building modern web applications with React,
+              Node.js, and cutting-edge technologies.
+            </p>
+          </div>
 
-        {/* Social Media Links */}
-        <div className="flex justify-start space-x-6">
-          <SocialIcon
-            href="https://github.com/Ajaykumar-2246"
-            label="GitHub Profile"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 496 512"
-              className="w-10 h-10"
-            >
-              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-            </svg>
-          </SocialIcon>
-          <SocialIcon
-            href="https://www.linkedin.com/in/ajay-kumar-1a679126a/"
-            label="LinkedIn Profile"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="w-10 h-10"
-            >
-              <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-            </svg>
-          </SocialIcon>
-        </div>
+          {/* Social Links */}
+          <div className="flex gap-4">
+            <IconButton
+              href="https://github.com/Ajaykumar-2246"
+              icon={Github}
+              label="GitHub Profile"
+              className="hover:text-gray-900 text-gray-700"
+            />
+            <IconButton
+              href="https://www.linkedin.com/in/ajay-kumar-1a679126a/"
+              icon={Linkedin}
+              label="LinkedIn Profile"
+              className="hover:text-blue-700 text-blue-600"
+            />
+          </div>
 
-        {/* Buttons */}
-        <div className="flex gap-3 justify-start">
-          <Link to="contact" smooth={true} duration={500} aria-label="Contact Me">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300">
+          {/* Action Buttons */}
+          <div className="flex flex-wrap gap-4">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-all shadow-sm hover:shadow-md"
+            >
+              <Mail className="w-5 h-5" />
               Contact Me
-            </button>
-          </Link>
-          <a
-            href="https://drive.google.com/file/d/13PT61Ky1NgWZTgV8QiMpBS56Nhz4X28T/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Get Resume"
-          >
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300">
+            </Link>
+            <a
+              href="https://drive.google.com/file/d/13PT61Ky1NgWZTgV8QiMpBS56Nhz4X28T/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all shadow-sm hover:shadow-md"
+            >
+              <FileText className="w-5 h-5" />
               Get Resume
-            </button>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
 
-      {/* Right Section */}
-      <div className="w-full md:w-1/2 lg:w-2/5 order-1 md:order-2 mt-8 md:mt-0">
-        <div className="bg-white rounded-xl shadow-xl border border-gray-200">
-          <div className="flex p-4 gap-2 items-center border-b-2">
-            <span className="bg-red-500 w-3 h-3 rounded-full"></span>
-            <span className="bg-orange-500 w-3 h-3 rounded-full"></span>
-            <span className="bg-blue-500 w-3 h-3 rounded-full"></span>
-          </div>
-          <div className="mt-4 p-3 space-y-2 text-sm font-mono text-gray-700">
-            <div>
-              <span className="text-blue-500">const</span> coder = {"{"}
+        {/* Right Section - Code Card */}
+        <div className="w-full md:w-1/2 mt-10 md:mt-0">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+            {/* Window Controls */}
+            <div className="flex p-4 gap-2 items-center bg-gray-50 border-b">
+              <span className="bg-red-500 w-3 h-3 rounded-full"></span>
+              <span className="bg-yellow-500 w-3 h-3 rounded-full"></span>
+              <span className="bg-green-500 w-3 h-3 rounded-full"></span>
             </div>
-            <div className="ml-4">
-              <span className="text-purple-500">name</span>:{" "}
-              <span className="text-green-500">'Ajay Kumar'</span>,
+
+            {/* Code Content */}
+            <div className="p-6 font-mono text-sm md:text-base">
+              <div className="text-gray-400">// About me</div>
+              <div className="text-blue-600 mt-2">const</div>
+              <div className="text-purple-600 ml-4">developer</div>
+              <div className="text-gray-800">= {"{"}</div>
+              <div className="ml-8">
+                <span className="text-purple-600">name</span>:
+                <span className="text-green-600"> 'Ajay Kumar'</span>,
+              </div>
+              <div className="ml-8">
+                <span className="text-purple-600">role</span>:
+                <span className="text-green-600"> 'Software Developer'</span>,
+              </div>
+              <div className="ml-8">
+                <span className="text-purple-600">skills</span>:
+                <span className="text-gray-800"> [</span>
+                <div className="ml-8 text-green-600">
+                  'React', 'Node.js', 'JavaScript',
+                  <br />
+                  'Tailwind CSS', 'MongoDB', 'Express',
+                  <br />
+                  'Redux', 'Git', 'Java'
+                </div>
+                <div className="ml-4 text-gray-800">],</div>
+              </div>
+              <div className="ml-8">
+                <span className="text-purple-600">passionate</span>:
+                <span className="text-blue-600"> true</span>,
+              </div>
+              <div className="ml-8">
+                <span className="text-purple-600">available</span>:
+                <span className="text-blue-600"> true</span>
+              </div>
+              <div className="text-gray-800">{"}"};</div>
             </div>
-            <div className="ml-4">
-              <span className="text-purple-500">skills</span>: [
-              <span className="text-green-500">
-                'ReactJS', 'NodeJS', 'Zustand', 'Redux','Express', 'Tailwind CSS',
-                'MongoDB','GitHub','Postman','Java'
-              </span>
-              ],
-            </div>
-            <div className="ml-4">
-              <span className="text-purple-500">hardworking</span>:{" "}
-              <span className="text-green-500">true</span>,
-            </div>
-            <div className="ml-4">
-              <span className="text-purple-500">quickLearner</span>:{" "}
-              <span className="text-green-500">true</span>,
-            </div>
-            <div>{"}"}</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

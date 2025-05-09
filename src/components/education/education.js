@@ -1,4 +1,5 @@
 import React from "react";
+import { GraduationCap } from "lucide-react";
 
 function Education() {
   const educationData = [
@@ -26,10 +27,13 @@ function Education() {
       className="p-2 pb-0 min-h-screen flex flex-col items-center"
     >
       {/* Header Section */}
-      <div className="text-center mb-8">
-        <h1 className="text-2xl mt-8 pt-9 font-bold text-black flex items-center justify-center gap-2">
-          <span className="text-2xl">🎓</span> My Education
-        </h1>
+      <div className="text-center mb-12">
+        <h2 className="text-2xl font-bold text-gray-900 inline-flex items-center justify-center gap-3">
+          <GraduationCap className="w-8 h-8 text-blue-600" />
+          EDUCATION
+        </h2>
+        <div className="w-16 h-1 bg-blue-500 mx-auto mt-1 rounded-full"></div>
+        <p className="text-gray-600 mt-1">My academic journey</p>
       </div>
 
       {/* Education Cards */}

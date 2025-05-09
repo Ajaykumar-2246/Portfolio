@@ -1,7 +1,13 @@
 import React from "react";
-import ML from "./ml.png";
+import { Code } from "lucide-react";
 
 const skills = [
+  // Programming Languages
+  {
+    name: "Java",
+    logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+  },
+
   // Frontend Skills
   {
     name: "HTML",
@@ -20,12 +26,12 @@ const skills = [
     logo: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
   },
   {
-    name: "React Redux",
-    logo: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    name: "React-Native (Expo)",
+    logo: "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F7s19o0dhp2pu41gmoyr9.png",
   },
   {
     name: "Zustand",
-    logo: "https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560",
+    logo: "https://awesomedevin.github.io/zustand-vue/en/img/bear.png",
   },
   {
     name: "TailwindCSS",
@@ -34,10 +40,6 @@ const skills = [
   {
     name: "Bootstrap",
     logo: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-  },
-  {
-    name: "React-Native (Expo)",
-    logo: "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F7s19o0dhp2pu41gmoyr9.png",
   },
 
   // Backend Skills
@@ -49,8 +51,12 @@ const skills = [
     name: "ExpressJS",
     logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png",
   },
+  {
+    name: "Convex (BaaS)",
+    logo: "https://www.convex.dev/_next/image?url=https%3A%2F%2Fpleasant-albatross-666.convex.cloud%2Fapi%2Fstorage%2F51662301-1a43-400c-8052-f2375a185e56&w=1536&q=75",
+  },
 
-  // Database
+  // Databases
   {
     name: "MongoDB",
     logo: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
@@ -73,24 +79,21 @@ const skills = [
     name: "Postman",
     logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   },
-
-  // Programming Languages
-  {
-    name: "Java",
-    logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-  },
-  
-  // Machine Learning
-  { name: "Machine Learning (basic)", logo: ML },
 ];
 
 function Skills() {
   return (
     <div id="skills" className="min-h-screen p-2 pb-0">
       {/* Heading Section */}
-      <div className="text-center mb-6 pt-20">
-        <h1 className="text-3xl font-bold text-gray-800">SKILLS</h1>
-        <p className="text-gray-600 mt-2">Technologies I work with</p>
+      <div className="text-center mb-16">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-flex items-center justify-center gap-3">
+          <Code className="w-8 h-8 text-blue-600" />
+          MY SKILLS
+        </h2>
+        <p className="text-gray-600 mt-1 max-w-2xl mx-auto text-lg">
+          Technologies I'm proficient with
+        </p>
+        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mt-2 rounded-full"></div>
       </div>
 
       {/* Skills Grid */}
