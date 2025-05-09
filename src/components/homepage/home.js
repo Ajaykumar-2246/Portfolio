@@ -2,19 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
-// Reusable Icon Button Component
-const IconButton = ({ href, icon: Icon, label, className = "" }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`p-3 rounded-full bg-gray-50 hover:bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all ${className}`}
-    aria-label={label}
-  >
-    <Icon className="w-5 h-5" />
-  </a>
-);
-
 const Home = () => {
   return (
     <section
@@ -40,18 +27,24 @@ const Home = () => {
 
           {/* Social Links */}
           <div className="flex gap-4">
-            <IconButton
+            <a
               href="https://github.com/Ajaykumar-2246"
-              icon={Github}
-              label="GitHub Profile"
-              className="hover:text-gray-900 text-gray-700"
-            />
-            <IconButton
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-gray-50 hover:bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all hover:text-gray-900 text-gray-700"
+              aria-label="GitHub Profile"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a
               href="https://www.linkedin.com/in/ajay-kumar-1a679126a/"
-              icon={Linkedin}
-              label="LinkedIn Profile"
-              className="hover:text-blue-700 text-blue-600"
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-gray-50 hover:bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all hover:text-blue-700 text-blue-600"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
           </div>
 
           {/* Action Buttons */}
