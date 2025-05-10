@@ -83,9 +83,9 @@ const skills = [
 
 function Skills() {
   return (
-    <div id="skills" className="min-h-screen p-2 pb-0">
+    <div id="skills" className="min-h-screen max-w-6xl mx-auto p-2 pb-0">
       {/* Heading Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 pt-15">
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-flex items-center justify-center gap-3">
           <Code className="w-8 h-8 text-blue-600" />
           MY SKILLS

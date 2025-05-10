@@ -44,7 +44,7 @@ function Projects() {
     <section id="projects" className="min-h-screen bg-white py-16 px-4 sm:px-8">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 pt-3">
           <h2 className="text-2xl font-bold text-gray-900 inline-flex items-center justify-center gap-3">
             <Code className="w-8 h-8 text-blue-600" />
             MY PROJECTS
